@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
               cell.classList.add("correct");
               currentNumber++;
               if (currentNumber > 9) {
-                message.textContent = "成功！全て正しくクリックしました！";
+                message.textContent = "成功！全て正しくクリックしました🎉";
               }
             } else {
               cell.classList.add("incorrect");
