@@ -1,0 +1,70 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+             http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- アプリケーション名 -->
+    <display-name>Mahjong</display-name> <!-- プロジェクト名を変更 -->
+
+    <!-- デフォルトページとして index.jsp を設定 -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- サーブレットの設定 -->
+    <servlet>
+        <servlet-name>GameRecordServlet</servlet-name>
+        <servlet-class>com.mahjong.GameRecordServlet</servlet-class> <!-- パッケージ名を変更 -->
+    </servlet>
+
+    <!-- サーブレットのマッピング -->
+    <servlet-mapping>
+        <servlet-name>GameRecordServlet</servlet-name>
+        <url-pattern>/GameRecordServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GameStatsServlet</servlet-name>
+        <servlet-class>com.mahjong.GameStatsServlet</servlet-class> <!-- パッケージ名を変更 -->
+    </servlet>
+
+    <!-- サーブレットのマッピング -->
+    <servlet-mapping>
+        <servlet-name>GameStatsServlet</servlet-name>
+        <url-pattern>/GameStatsServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- PostgreSQLのDataSource設定 -->
+    <resource-ref>
+        <description>PostgreSQL DataSource</description>
+        <res-ref-name>jdbc/Mahjong_Score</res-ref-name> <!-- 変更 -->
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+    <!-- 文字エンコーディングフィルタの設定 -->
+    <filter>
+        <filter-name>SetCharacterEncodingFilter</filter-name>
+        <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>SetCharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- セッションタイムアウト設定（任意） -->
+    <session-config>
+        <session-timeout>30</session-timeout> <!-- セッションタイムアウトを30分に設定 -->
+    </session-config>
+
+</web-app>
