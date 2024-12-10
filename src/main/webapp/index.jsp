@@ -15,6 +15,8 @@
    <a href="GameStatsServlet" class="button">成績確認</a>
    </div>
     
+    <h3>役満も平和も確率は同じ・・・和了れるか、和了れないか！！２分の１だ！！</h3>
+    
     <div class="mainview">
     
      <!-- エラーメッセージ表示 -->

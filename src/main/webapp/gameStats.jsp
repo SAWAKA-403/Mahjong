@@ -17,6 +17,7 @@
 <body>
 	
     <h1>個人総合成績</h1>
+    <h3>勝たなきゃ誰かの養分...</h3>
 
 	<div class="mainview">
     <div class="scview">

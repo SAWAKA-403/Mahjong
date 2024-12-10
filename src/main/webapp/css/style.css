@@ -1,22 +1,21 @@
-
-
 @charset "UTF-8";
 
+/* ボタン */
 .button {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-	padding: 10px 20px;
-	  font-size: 16px;
-	  background-color: #007bff;
-	  color: white;
-	  border: none;
-	  border-radius: 5px;
-	  cursor: pointer;
-	  font-family:sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
 }
 .button:hover {
-	background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 /* 背景と基本スタイル */
@@ -26,38 +25,41 @@ body {
     background-color: #E6E6E6;
     margin: 20px;
     color: #333;
-	text-align: center;
-	font-weight: bold;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* 見出し */
 h1 {
     text-align: center;
     color: #444;
-	
 }
 
+h3 {
+    text-align: center;
+    margin: 0;
+}
 .mainview {
-	background: #fff;
-	    padding: 20px;
-	    margin: 0 auto;
-	    border-radius: 8px;
-	    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-	    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
 }
 
 /* ラベル */
 label {
     font-weight: bold;
     margin: 10px 0 5px;
-	font-size: 18px;
+    font-size: 18px;
 }
 
 /* 入力フィールドとボタン */
 input[type="number"], input[type="radio"], input[type="submit"] {
     margin-bottom: 15px;
-	text-align: center;
-	vertical-align: baseline;
+    text-align: center;
+    vertical-align: baseline;
 }
 
 input[type="number"] {
@@ -74,8 +76,8 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-	font-weight: bold;
-	font-family:sans-serif;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 input[type="submit"]:hover {
@@ -87,88 +89,92 @@ p {
     color:#E64918;
     text-align: center;
     font-weight: bold;
-	font-size: 19px;
+    font-size: 18px;
+    margin: 0;
 }
 
 h2 {
-	font-size: 22px;
-	font-weight: bold;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 20px;
 }
 
 .grid div {
-  background: #007bff;
-  color: white;
-  font-size: 26px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family:sans-serif;
+    background: #007bff;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
 }
 
 .grid div.correct {
-  background: #28a745;
-  cursor: default;
+    background: #28a745;
+    cursor: default;
 }
 
 .grid div.incorrect {
-  background: #dc3545;
-  cursor: default;
+    background: #dc3545;
+    cursor: default;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: #dc3545;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-  font-weight: bold;
-  font-family:sans-serif;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 button:hover {
-  background-color: #BC0019;
+    background-color: #BC0019;
 }
 
 .message {
-	font-size: 18px;
-	text-align: center;
-	font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .scview {
-	display: flex;
-	justify-content:space-evenly;
+    display: flex;
+    justify-content:space-evenly;
 }
 
 .fview {
-	justify-content:center;
-	display: flex;
-	align-items: center;
+    justify-content:center;
+    display: flex;
+    align-items: center;
 }
+
+
+
